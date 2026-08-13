@@ -1,0 +1,114 @@
+[register.html]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a class="logo" href="index.html">Campus<span>Connect</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active" href="register.html">Register</a></li>
+    </ul>
+    <button class="theme-btn" id="themeToggle">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">SAVE YOUR SPOT</p>
+      <h1>Event Registration</h1>
+      <p>Complete the form and submit your details.</p>
+    </div>
+  </section>
+
+  <section class="section container form-section">
+    <form id="registrationForm" class="registration-form" action="php/process_registration.php" method="POST" novalidate>
+      <h2>Register for CampusConnect</h2>
+      <p class="form-intro">All fields marked <strong>*</strong> are required.</p>
+
+      <div id="formError" class="form-message error" role="alert"></div>
+      <div id="formSuccess" class="form-message success" role="status"></div>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="full_name" placeholder="e.g. Daniel Muchiri">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label for="studentId">Student ID *</label>
+            <input type="text" id="studentId" name="student_id" placeholder="e.g. 123456">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Event Details</legend>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="event">Choose Event *</label>
+            <select id="event" name="event">
+              <option value="">-- Select an event --</option>
+              <option>Innovation & Career Day</option>
+              <option>Campus Sports Festival</option>
+              <option>Creative Arts Night</option>
+              <option>Tech Skills Workshop</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="attendance">Attendance Type *</label>
+            <select id="attendance" name="attendance">
+              <option value="">-- Select type --</option>
+              <option>In-person</option>
+              <option>Online</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="message">Additional Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us anything we should know..."></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="check-row">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I confirm that the information provided is correct. *</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary full-btn">Submit Registration</button>
+      <p class="small-note">Your details will be sent to the PHP processing page using the POST method.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <p>&copy; 2026 CampusConnect. Student project.</p>
+    <p><a href="mailto:info@campusconnect.example">info@campusconnect.example</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
