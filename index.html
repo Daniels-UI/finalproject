@@ -1,0 +1,103 @@
+[index.html]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a class="logo" href="index.html">Campus<span>Connect</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <button class="theme-btn" id="themeToggle">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content container">
+      <div>
+        <p class="eyebrow">STUDENT LIFE • EVENTS • COMMUNITY</p>
+        <h1 id="welcomeMessage">Welcome to CampusConnect</h1>
+        <p class="hero-text">Discover campus events, meet new people, build skills and make your university experience more memorable.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="events.html">Explore Events</a>
+          <a class="btn btn-outline" href="register.html">Join an Event</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="hero-icon">🎓</span>
+        <h2>Connect. Learn. Experience.</h2>
+        <p>One simple place for students to discover what is happening around campus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <p class="eyebrow">WHY CAMPUSCONNECT?</p>
+      <h2>Everything you need for campus activities</h2>
+    </div>
+    <div class="card-grid three">
+      <article class="info-card">
+        <div class="icon">📅</div>
+        <h3>Find Events</h3>
+        <p>Browse workshops, sports, networking sessions and social events in one place.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon">🤝</div>
+        <h3>Meet People</h3>
+        <p>Join activities that help you connect with students who share your interests.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon">🚀</div>
+        <h3>Build Skills</h3>
+        <p>Attend practical sessions that can strengthen your academic and professional skills.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">UPCOMING HIGHLIGHT</p>
+        <h2>Innovation & Career Day</h2>
+        <p>Meet student innovators, discover career opportunities and take part in practical sessions.</p>
+        <button class="btn btn-primary" id="detailsBtn">Show More Details</button>
+        <div id="extraDetails" class="hidden-content">
+          <ul>
+            <li>Networking with industry guests</li>
+            <li>Student innovation showcase</li>
+            <li>CV and interview mini-clinic</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote-box">
+        <blockquote>“Your campus experience is what you choose to make of it.”</blockquote>
+        <p>— CampusConnect Team</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <p>&copy; 2026 CampusConnect. Student project.</p>
+    <p><a href="mailto:info@campusconnect.example">info@campusconnect.example</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
